@@ -55,7 +55,7 @@ class ProfileCard extends StatelessWidget {
                     height: 20,
                   ),
                   Container(
-                    height: height * 0.4,
+                    height: height * 0.32,
                     //color: Colors.black,
                     child: LayoutBuilder(builder: (context, constraints) {
                       double inerHeight = constraints.maxHeight;
@@ -76,20 +76,41 @@ class ProfileCard extends StatelessWidget {
                                 ),
                                 child: Column(
                                   children: [
-                                    SizedBox(height: 70,),
-                                    Text("Jahid Hasan",style: TextStyle(fontSize: 20),),
+                                    SizedBox(
+                                      height: 70,
+                                    ),
+                                    Text(
+                                      "Superstar Jeet",
+                                      style: GoogleFonts.aBeeZee(
+                                        fontSize: 25,
+                                      )
+                                      //TextStyle(fontSize: 20),
+                                    ),
+                                    Text(
+                                      "Actor",
+                                        style: GoogleFonts.aBeeZee(
+                                          fontSize: 15,
+                                        ),
+                                    ),
                                   ],
                                 ),
                               )),
                           Positioned(
-                              top: 0,
-                              left: 0,
-                              right: 0,
-                              child: Container(
-                                height:190,
-                                width:30,
-                                child:Icon(Icons.person_outline,size: 120,),
-                              ))
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            child: Container(
+                              height: 130,
+                              width: 30,
+                              child: CircleAvatar(
+                                child: ClipOval(
+                                    child: Image.asset(
+                                  "images/jeet.jpg",
+                                  fit: BoxFit.fill,
+                                )),
+                              ),
+                            ),
+                          )
                         ],
                       );
                     }),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'designs/camera_selling_ui.dart';
+import 'designs/halmetStore/home-page.dart';
 import 'designs/profile_card.dart';
 
 void main() {
@@ -16,9 +17,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: ProfileCard(),
+      home: HomaPage(),
     );
   }
 }

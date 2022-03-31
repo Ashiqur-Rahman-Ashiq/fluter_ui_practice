@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'designs/camera_selling_ui.dart';
 import 'designs/halmetStore/home-page.dart';
+import 'designs/halmetStore/product_detailpage.dart';
 import 'designs/profile_card.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: HomaPage(),
+      home: productDetail(),
     );
   }
 }
